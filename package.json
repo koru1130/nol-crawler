@@ -1,0 +1,10 @@
+{
+  "name": "nol-crawler",
+  "main": "index.js",
+  "author": "koru1130 <me@koru.me>",
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^20.0.0",
+    "p-map": "^5.5.0"
+  }
+}
