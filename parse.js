@@ -180,11 +180,12 @@ const parseAll = n => {
     )(temp)
     if(maybeMissing) {
         console.log(`WARNING: Page ${maybeMissing} may miss some courses.`)
+        console.log(`Please check the pages and manually paste the full content into the page if missing.`)
     }
     return result
 }
 
 //console.log(JSON.stringify(parseAll(99)))
 
-const result = parseAll(99);
-fs.writeFileSync('./temp1.json', JSON.stringify(result))
+const result = parseAll(100);
+fs.writeFileSync('./result.json', JSON.stringify(result))
